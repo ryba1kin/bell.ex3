@@ -27,8 +27,7 @@ public class SeleniumTestPointTest {
         System.setProperty("webdriver.chrome.driver", "E:/_drivers_for_programming/chromedriver.exe");
          // 2. Открыть браузер Chrome и развернуть на весь экран.
         this.driver = new ChromeDriver();
-        this.driver.manage().timeouts().implicitlyWait(50L, SECONDS);
-        this.driver.manage().timeouts().pageLoadTimeout(300L, SECONDS);
+        this.driver.manage().timeouts().implicitlyWait(50, SECONDS);
     }
 
     @After
